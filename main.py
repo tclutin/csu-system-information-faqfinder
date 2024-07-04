@@ -178,7 +178,10 @@ def find_question_answers_oldversion(input_question, question_vectors, pack, top
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await initialize_service()
+    try:
+        await initialize_service()
+    except Exception as e:
+        print(e)
     yield
 
 
