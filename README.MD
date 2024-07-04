@@ -1,1 +1,1 @@
-# CSU
+# csu-system-information-faqfinder
